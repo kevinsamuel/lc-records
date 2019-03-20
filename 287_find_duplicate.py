@@ -20,3 +20,7 @@ class Solution(object):
             slow = nums[slow]
             fast = nums[fast]
         return slow
+
+        #执行用时 : 36 ms, 在Find the Duplicate Number的Python提交中击败了52.36% 的用户
+        #内存消耗 : 12.8 MB, 在Find the Duplicate Number的Python提交中击败了16.67% 的用户
+        return (sum(nums)-sum(set(nums)))//(len(nums) - len(set(nums)))
